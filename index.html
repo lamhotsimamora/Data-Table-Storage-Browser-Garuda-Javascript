@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Data Table & Storage Browser | Garuda Javascript</title>
+	<script type="text/javascript" src="https://cdn.rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" type="image/png" href="ico.png"/>
+  	<meta property="og:description" content="Load Data Table and Save to Storage Browser | Garuda Javascript" />
+	<meta property="og:url" content="https://lamhotsimamora.github.io/Data-Table-Storage-Browser-Garuda-Javascript/" />
+	<meta property="og:type"   content="website" />
+	<meta name="Author" 		content="Lamhot Simamora" />
+	<meta name="copyright" 		content="copyright@2017" />
+	<meta name="language" 		  content="Indonesian, English" />
+	<meta name="distribution" 	  content="Global" />
+	<meta name="rating" 		  content="General" />
+	<meta name="expires" 		  content="1800" />
+	<meta name="theme-color"      content="#1390DF">
+
+	<meta property="og:url" content="https://lamhotsimamora.github.io/Data-Table-Storage-Browser-Garuda-Javascript/" />
+	<meta property="og:image" content="https://lamhotsimamora.github.io/Data-Table-Storage-Browser-Garuda-Javascript/bg.png" />
+	<meta property="og:image:width" content="300" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type"          content="website" />
+	<meta name="ROBOTS" 		content="index"/>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="my_body">
+
+	<div class="container">
+
+
+		</br> 
+		</br> 
+			
+			<center>
+				<a target="_blank" href="https://github.com/lamhotsimamora/Data-Table-Storage-Browser-Garuda-Javascript"><i class="fa fa-github" aria-hidden="true"> Github</i></a> &nbsp
+				<a target="_blank" href="https://github.com/lamhotsimamora/Data-Table-Storage-Browser-Garuda-Javascript/fork"><i class="fa fa-code-fork" aria-hidden="true"> Fork</i></a>
+			</center>
+
+		</br> 
+		</br> 
+		<span>Load data from this URL :
+		</span>
+
+		<input type="text" placeholder="URL" class="form-control" readonly="" id="URL_Server" name="">
+		</br> 
+				
+		<button class="btn btn-primary btn-md" id="btn_load">
+		Load Data
+		</button>
+
+		<button class="btn btn-secondary btn-md" id="btn_display">
+		Display Data
+		</button>
+    
+        <button class="btn btn-success btn-md" id="btn_clear">
+		Clear Storage & Table
+		</button>
+		<hr>
+		</br>
+		<span class="badge badge-pill badge-info"><gf id="disp_info"></gf></span>
+		</br>
+		</br>
+		<table class="table">
+		    <thead>
+		        <tr>
+		            <th>PostId</th>
+		            <th>Name</th>
+		            <th>Email</th>
+		            <th>Body</th>
+		        </tr>
+		    </thead>
+    	<tbody id="disp_table">
+		</tbody>
+		</table>
+</div>
+
+<div class="container">
+	 </br>
+	
+	<center><button class="btn btn-primary btn-md" onclick=" _scroll('my_body');">Go Up</button></center>
+</div>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
