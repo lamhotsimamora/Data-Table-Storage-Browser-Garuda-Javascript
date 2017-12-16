@@ -58,7 +58,7 @@ function renderTable(){
 	    var obj = JSON.parse(obj);
 	  
 	    var tmplte= '';
-	    for (var i = 0; i < obj.length; i++) 
+	    for (var i = 0; i < 20; i++) 
 	    {	
 	    	var id    = obj[i]['id'];
 	    	var name  = obj[i]['name'];
