@@ -53,7 +53,6 @@ function renderTable(){
     if (obj===null || obj==='')
     {
     	loadData();
-	_refresh('');
     	return;
     }else{
 	    var obj = JSON.parse(obj);
